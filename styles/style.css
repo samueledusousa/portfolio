@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Libre+Baskerville:wght@700&family=Montserrat:ital,wght@1,600&display=swap');
+
+:root {
+    --cor-primaria: #556665;
+    --cor-secundaria: #7CEAE6;
+    --cor-ternaria: #22D4FD;
+    --cor-quartenaria: #77EB49;
+    --cor-quintenaria: #f6f6f6;
+    --cor-sexta: #000000;
+    --cor-hover: #272727;
+
+    --font-primaria: 'Libre Baskerville', serif;
+    --font-secundaria: 'Montserrast', sans-serif;
+    --font-ternaria: 'Dongle', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+span {
+    border:2px var(--cor-quaternaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 5%; 
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+
+.cabecalho__menu__link {
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    display: flex;
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--font-primaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-quaternaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.97rem;
+    font-family: var(--font-ternaria);
+}
+
+.apresentacao__conteudo__informacoes__curriculares {
+    font-size: 1.20rem;
+    color: var(--cor-quartenaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.aprentacao__links__subtitulo {
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+
+.apresentacao__links__navegacao {
+    /* background-color: #22d4fd; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-ternaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    color: var(--cor-quintenaria);
+    text-decoration: none;
+    font-family: var(--font-ternaria);
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+
+.rodape {
+    padding: 23.64px;
+    color: var(--cor-sexta);
+    background-color: var(--cor-ternaria);
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+@media (max-width: 1200px) {
+   .cabecalho {
+        padding: 6%;
+   }
+
+   .cabecalho__menu {
+        justify-content: center;
+   }
+   
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
